@@ -8,6 +8,7 @@ NUM_SQUARES = 9
 def display_instruction():
     print(
         '''
+        This is instruction
         1 | 2 | 3
         ----------
         4 | 5 | 6 
