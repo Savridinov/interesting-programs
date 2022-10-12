@@ -8,7 +8,10 @@ NUM_SQUARES = 9
 def display_instruction():
     print(
         '''
-        This is instruction
+        Your brain and my processor will clash at the tic-tac-toe board.
+        To make a move, enter a number from 1 to 9. 
+        The numbers uniquely correspond to the fields of the board, as shown below
+        
         1 | 2 | 3
         ----------
         4 | 5 | 6 
@@ -40,7 +43,7 @@ def pieces():
         human = X
         computer = O
     else:
-        print('\nhasdhshdaa')
+        print('Your prowess will destroy you ... I will begin')
         computer = X
         human = O
     return human, computer
@@ -134,16 +137,17 @@ def congrat_the_winner(the_winner, human, computer):
     else:
         print('Tie!\n')
     if the_winner == computer:
-        print('FATALITY')
+        print('As I predicted victory is mine')
     elif the_winner == human:
-        print('Ohh that\'s bad')
+        print('It can\'t be! Did you somehow manage to outsmart me.\n')
+        print('I swear I won\'t let this happen again')
     elif the_winner == TIE:
-        print('Your lucky. Next time i\'ll show you')
+        print('You managed to bring the game to a draw... at least not bad.')
 
 
 def main():
     display_instruction()
-    computer, human = pieces()
+    human, computer = pieces()
     turn = X
     board = new_board()
     dislpay_board(board)
